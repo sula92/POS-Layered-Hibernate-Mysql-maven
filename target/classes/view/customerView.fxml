@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="834.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.dep.sula.controller.CustomerViewController">
+   <children>
+      <AnchorPane prefHeight="834.0" prefWidth="344.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTextField fx:id="txId" focusColor="#fbfcff" layoutX="32.0" layoutY="233.0" prefHeight="29.0" prefWidth="279.0" promptText="ID" unFocusColor="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtName" layoutX="32.0" layoutY="403.0" prefHeight="29.0" prefWidth="279.0" promptText="NAME" unFocusColor="#f2eeee">
+               <font>
+                  <Font size="19.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtAddress" layoutX="32.0" layoutY="571.0" prefHeight="29.0" prefWidth="279.0" promptText="ADDRESS" unFocusColor="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></JFXTextField>
+            <Button fx:id="btnSave" layoutX="106.0" layoutY="682.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: blue;" text="SAVE" textFill="#fcf7f7" />
+            <Button fx:id="btnCus" layoutX="106.0" layoutY="106.0" mnemonicParsing="false" onAction="#btnCusOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: blue;" text="+CUSTOMER" textFill="#f5f3f3" />
+            <FontAwesomeIconView fx:id="iconHome" fill="#fcf8f8" glyphName="HOME" layoutX="26.0" layoutY="65.0" onMouseClicked="#navigate" size="54.0" />
+         </children></AnchorPane>
+      <TableView fx:id="tblCustomer" layoutX="364.0" layoutY="370.0" prefHeight="399.0" prefWidth="688.0">
+        <columns>
+          <TableColumn fx:id="colCusId" prefWidth="131.0" text="CUSTOMER ID" />
+          <TableColumn fx:id="colCusName" prefWidth="267.0" text="NAME" />
+            <TableColumn fx:id="colCusAdd" prefWidth="186.0" text="ADDRESS" />
+            <TableColumn fx:id="colDel" prefWidth="103.0" text="DELETE" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearch" layoutX="376.0" layoutY="157.0" prefHeight="29.0" prefWidth="665.0" promptText="SEARCH" />
+      <Label layoutX="548.0" layoutY="29.0" prefHeight="58.0" prefWidth="234.0" text="CUSTOMER FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

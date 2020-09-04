@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Cryptography">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/createdlibs/Cryptography.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

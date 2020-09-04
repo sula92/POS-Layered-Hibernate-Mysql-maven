@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="813.0" prefWidth="1007.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.dep.sula.controller.Main">
+   <children>
+      <FontAwesomeIconView fill="#fffefe" glyphName="HOME" layoutX="418.0" layoutY="463.0" size="200" />
+      <FontAwesomeIconView fill="#f5efef" glyphName="USERS" layoutX="468.0" layoutY="189.0" size="80.0" />
+      <FontAwesomeIconView fx:id="iconCustomer" fill="WHITE" glyphName="CIRCLE_THIN" layoutX="425.0" layoutY="238.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" size="200" text="" />
+      <FontAwesomeIconView fill="#f5eeee" glyphName="CUBES" layoutX="148.0" layoutY="428.0" size="100" />
+      <FontAwesomeIconView fill="#fcf8f8" glyphName="CALCULATOR" layoutX="777.0" layoutY="415.0" size="100" />
+      <FontAwesomeIconView fill="#f8f7f7" glyphName="SEARCH" layoutX="477.0" layoutY="744.0" size="100" text="" />
+      <FontAwesomeIconView />
+      <FontAwesomeIconView fx:id="iconItem" fill="#f5f4f4" glyphName="CIRCLE_THIN" layoutX="127.0" layoutY="470.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" size="200" text="" />
+      <FontAwesomeIconView fx:id="iconSearch" fill="#f5f4f4" glyphName="CIRCLE_THIN" layoutX="438.0" layoutY="778.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" size="200" text="" />
+      <FontAwesomeIconView fx:id="iconPlaceOrder" fill="WHITE" glyphName="CIRCLE_THIN" layoutX="741.0" layoutY="451.0" onMouseClicked="#navigate" onMouseEntered="#img_mouseEnterence" onMouseExited="#img_mouseExit" size="200" text="" />
+      <Label fx:id="lab1" layoutX="371.0" layoutY="2.0" prefHeight="47.0" prefWidth="338.0" text="DARK TEC PC GAMES" textFill="#d0ca10">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="390.0" layoutY="489.0" prefHeight="45.0" prefWidth="273.0" text="PLAY WITH THE BEST......" textFill="#0d9ae0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

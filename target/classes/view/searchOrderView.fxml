@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="787.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.dep.sula.controller.SearchOrderViewController">
+   <children>
+      <TableView fx:id="tblOrders" layoutX="36.0" layoutY="315.0" prefHeight="430.0" prefWidth="844.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="137.0" text="ORDER ID" />
+          <TableColumn fx:id="colOrderDate" prefWidth="220.0" text="ORDER DATE" />
+            <TableColumn fx:id="colCusId" prefWidth="142.0" text="CUSTOMER ID" />
+            <TableColumn fx:id="colCusNm" prefWidth="197.0" text="CUSTOMER NAME" />
+            <TableColumn fx:id="colTot" prefWidth="147.0" text="TOTAL" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fx:id="iconHome" glyphName="HOME" layoutX="11.0" layoutY="46.0" onMouseClicked="#navigate" size="54" text="" />
+      <JFXTextField fx:id="txtSearch" layoutX="144.0" layoutY="187.0" prefHeight="29.0" prefWidth="610.0" promptText="SEARCH" />
+      <Label layoutX="320.0" layoutY="47.0" prefHeight="54.0" prefWidth="303.0" text="SEARCH ORDER FORM">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

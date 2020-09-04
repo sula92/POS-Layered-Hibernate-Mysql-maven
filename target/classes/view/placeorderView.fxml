@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="880.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.dep.sula.controller.PlaceOrderViewController">
+   <children>
+      <JFXComboBox fx:id="cmbCusId" layoutX="79.0" layoutY="125.0" prefHeight="31.0" prefWidth="219.0" promptText="CUSTOMER ID" />
+      <JFXComboBox fx:id="cmbItemCode" layoutX="83.0" layoutY="238.0" prefHeight="31.0" prefWidth="211.0" promptText="ITEM CODE" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="83.0" layoutY="352.0" prefHeight="29.0" prefWidth="211.0" promptText="QTY ON HAND" />
+      <JFXTextField fx:id="txtCusNm" layoutX="363.0" layoutY="126.0" prefHeight="29.0" prefWidth="597.0" promptText="CUSTOMER NAME" />
+      <JFXTextField fx:id="txtItemDes" layoutX="363.0" layoutY="239.0" prefHeight="29.0" prefWidth="597.0" promptText="ITEM DESCRIPTION" />
+      <JFXTextField fx:id="txtUprice" layoutX="363.0" layoutY="352.0" prefHeight="29.0" prefWidth="244.0" promptText="UNIT PRICE" />
+      <JFXTextField fx:id="txtQty" layoutX="638.0" layoutY="352.0" prefHeight="29.0" prefWidth="233.0" promptText="QUANTITY" />
+      <TableView fx:id="tblOrder" layoutX="79.0" layoutY="414.0" prefHeight="355.0" prefWidth="891.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="109.0" text="CODE" />
+          <TableColumn fx:id="colDes" prefWidth="172.0" text="DESCRIPTION" />
+            <TableColumn fx:id="colQty" prefWidth="103.0" text="QTY" />
+            <TableColumn fx:id="colUprice" prefWidth="213.0" text="UNIT PRICE" />
+            <TableColumn fx:id="colTot" prefWidth="165.0" text="TOTAL" />
+            <TableColumn fx:id="colDel" prefWidth="128.0" text="DELETE" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="888.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="42.0" prefWidth="82.0" style="-fx-background-color: BLUE;" text="+ADD" textFill="#fffefe" />
+      <Label fx:id="labOrderId" layoutX="888.0" layoutY="27.0" text="ORDEID" />
+      <Label fx:id="labDate" layoutX="888.0" layoutY="63.0" text="DATE" />
+      <Label fx:id="labTot" layoutX="83.0" layoutY="801.0" prefHeight="51.0" prefWidth="82.0" text="TOTAL:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labTotal" layoutX="172.0" layoutY="803.0" prefHeight="47.0" prefWidth="119.0" text="00.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="4.0" text="PLACE ORDER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOrder" layoutX="855.0" layoutY="801.0" mnemonicParsing="false" onAction="#btnOrder" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: GREEN;" text="PLACE ORDER" textFill="#f5f4f4" />
+      <FontAwesomeIconView fx:id="iconHome" glyphName="HOME" layoutX="73.0" layoutY="49.0" onMouseClicked="#navigate" size="54" text="" />
+      <Button fx:id="btnReset" layoutX="437.0" layoutY="807.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="31.0" prefWidth="185.0" style="-fx-background-color: red;" text="RESET" textFill="#f5f0f0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
